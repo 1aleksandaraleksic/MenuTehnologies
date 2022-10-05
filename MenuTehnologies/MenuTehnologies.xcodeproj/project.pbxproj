@@ -14,6 +14,15 @@
 		B276B43528EC5DB700D0C018 /* MenuTehnologiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276B43428EC5DB700D0C018 /* MenuTehnologiesTests.swift */; };
 		B276B43F28EC5DB700D0C018 /* MenuTehnologiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276B43E28EC5DB700D0C018 /* MenuTehnologiesUITests.swift */; };
 		B276B44128EC5DB700D0C018 /* MenuTehnologiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276B44028EC5DB700D0C018 /* MenuTehnologiesUITestsLaunchTests.swift */; };
+		B276B45328EC766B00D0C018 /* LoginTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276B45228EC766B00D0C018 /* LoginTextFieldView.swift */; };
+		B276B45628EC7B7D00D0C018 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B276B45528EC7B7C00D0C018 /* UIColor+Extension.swift */; };
+		B2C2920328ED6E9D000421CF /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2920228ED6E9D000421CF /* Color+Extension.swift */; };
+		B2C2920528ED6EB1000421CF /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2920428ED6EB1000421CF /* Font+Extension.swift */; };
+		B2C2927028ED8699000421CF /* VenuesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2926F28ED8699000421CF /* VenuesListView.swift */; };
+		B2C2927228ED8775000421CF /* SingleVenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2927128ED8775000421CF /* SingleVenueView.swift */; };
+		B2C2927428ED8811000421CF /* HSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2927328ED8811000421CF /* HSeparatorView.swift */; };
+		B2C2927528ED8F9D000421CF /* Circular-Std-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2C2926E28ED77EE000421CF /* Circular-Std-bold.ttf */; };
+		B2C2927728EDB472000421CF /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2927628EDB472000421CF /* Venue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,16 @@
 		B276B43A28EC5DB700D0C018 /* MenuTehnologiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTehnologiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B276B43E28EC5DB700D0C018 /* MenuTehnologiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTehnologiesUITests.swift; sourceTree = "<group>"; };
 		B276B44028EC5DB700D0C018 /* MenuTehnologiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTehnologiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B276B45228EC766B00D0C018 /* LoginTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFieldView.swift; sourceTree = "<group>"; };
+		B276B45528EC7B7C00D0C018 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B2C2920228ED6E9D000421CF /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		B2C2920428ED6EB1000421CF /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		B2C2926D28ED7616000421CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B2C2926E28ED77EE000421CF /* Circular-Std-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Circular-Std-bold.ttf"; sourceTree = "<group>"; };
+		B2C2926F28ED8699000421CF /* VenuesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesListView.swift; sourceTree = "<group>"; };
+		B2C2927128ED8775000421CF /* SingleVenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVenueView.swift; sourceTree = "<group>"; };
+		B2C2927328ED8811000421CF /* HSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSeparatorView.swift; sourceTree = "<group>"; };
+		B2C2927628EDB472000421CF /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +113,15 @@
 		B276B42228EC5DB400D0C018 /* MenuTehnologies */ = {
 			isa = PBXGroup;
 			children = (
+				B2C2926D28ED7616000421CF /* Info.plist */,
+				B2C2920628ED7243000421CF /* Font */,
+				B2C2920128ED6E68000421CF /* Extensions */,
+				B276B45428EC7B6600D0C018 /* Helper */,
+				B276B45028EC75BA00D0C018 /* Manager */,
+				B276B44F28EC75B400D0C018 /* Model */,
+				B276B44E28EC75AB00D0C018 /* ViewModel */,
+				B276B44D28EC75A400D0C018 /* View */,
 				B276B42328EC5DB400D0C018 /* MenuTehnologiesApp.swift */,
-				B276B42528EC5DB400D0C018 /* ContentView.swift */,
 				B276B42728EC5DB700D0C018 /* Assets.xcassets */,
 				B276B42928EC5DB700D0C018 /* Preview Content */,
 			);
@@ -125,6 +151,73 @@
 				B276B44028EC5DB700D0C018 /* MenuTehnologiesUITestsLaunchTests.swift */,
 			);
 			path = MenuTehnologiesUITests;
+			sourceTree = "<group>";
+		};
+		B276B44D28EC75A400D0C018 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B276B45128EC764000D0C018 /* Components */,
+				B276B42528EC5DB400D0C018 /* ContentView.swift */,
+				B2C2926F28ED8699000421CF /* VenuesListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B276B44E28EC75AB00D0C018 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B276B44F28EC75B400D0C018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2927628EDB472000421CF /* Venue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B276B45028EC75BA00D0C018 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		B276B45128EC764000D0C018 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B276B45228EC766B00D0C018 /* LoginTextFieldView.swift */,
+				B2C2927128ED8775000421CF /* SingleVenueView.swift */,
+				B2C2927328ED8811000421CF /* HSeparatorView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B276B45428EC7B6600D0C018 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B2C2920128ED6E68000421CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B276B45528EC7B7C00D0C018 /* UIColor+Extension.swift */,
+				B2C2920228ED6E9D000421CF /* Color+Extension.swift */,
+				B2C2920428ED6EB1000421CF /* Font+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2C2920628ED7243000421CF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B2C2926E28ED77EE000421CF /* Circular-Std-bold.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C2927528ED8F9D000421CF /* Circular-Std-bold.ttf in Resources */,
 				B276B42B28EC5DB700D0C018 /* Preview Assets.xcassets in Resources */,
 				B276B42828EC5DB700D0C018 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C2927228ED8775000421CF /* SingleVenueView.swift in Sources */,
+				B2C2927728EDB472000421CF /* Venue.swift in Sources */,
+				B2C2927028ED8699000421CF /* VenuesListView.swift in Sources */,
+				B2C2927428ED8811000421CF /* HSeparatorView.swift in Sources */,
 				B276B42628EC5DB400D0C018 /* ContentView.swift in Sources */,
+				B2C2920328ED6E9D000421CF /* Color+Extension.swift in Sources */,
+				B2C2920528ED6EB1000421CF /* Font+Extension.swift in Sources */,
+				B276B45328EC766B00D0C018 /* LoginTextFieldView.swift in Sources */,
 				B276B42428EC5DB400D0C018 /* MenuTehnologiesApp.swift in Sources */,
+				B276B45628EC7B7D00D0C018 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +522,7 @@
 				DEVELOPMENT_TEAM = DRCMG84N3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MenuTehnologies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +552,7 @@
 				DEVELOPMENT_TEAM = DRCMG84N3Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MenuTehnologies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

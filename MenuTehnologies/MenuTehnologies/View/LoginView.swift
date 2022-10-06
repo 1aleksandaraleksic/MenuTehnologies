@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LoginView.swift
 //  MenuTehnologies
 //
 //  Created by aleksandar.aleksic on 4.10.22..
@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+struct LoginView: View {
+    @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
+
+    @State var email: String = "test@testmenu.app"
+    @State var password: String = "test1234"
 
     var body: some View {
         VStack(spacing: 0) {
@@ -33,7 +35,7 @@ struct ContentView: View {
                 LoginTextFieldView(placeholder: "Password", text: $password)
                     .padding(.bottom, 20)
                 Button{
-
+                    viewModel.login(email: email, password: password)
                 } label: {
                     Text("Sign in")
                         .frame(height: 56)
@@ -46,6 +48,9 @@ struct ContentView: View {
                 .cornerRadius(8)
             }
             .frame(maxHeight: .infinity)
+            .fullScreenCover(isPresented: self.$viewModel.isLoggedIn, content: { 
+                VenueListView()
+            })
         }
         .frame(
               minWidth: 0,
@@ -55,11 +60,5 @@ struct ContentView: View {
               alignment: .center
             )
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
